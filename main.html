@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+        <meta charset="UTF-8">
+        <title>Menu principal - Hotel Maloca</title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="./Assets/hotelmalocalogowhite.png">
+            <div class="logo_name">Hotel Maloca</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Buscar...">
+            <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+            <a href="./main.html" id="inicio-link">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Inicio</span>
+            </a>
+            <span class="tooltip">Inicio</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Huéspedes</span>
+            </a>
+            <div class="submenu">
+                <a href="./Huesped.html">Registrar Huésped</a>
+                <a href="./consultahuesped.php">Consultar Huésped</a>
+            </div>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-notepad' ></i>
+            <span class="links_name">Reservas</span>
+        </a>
+        <div class="submenu">
+            <a href="./reservas.html">Realizar reserva</a>
+            <a href="./consultareservas.html">Consultar reserva</a>
+        </div>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-check-square'></i>
+            <span class="links_name">Validación</span>
+        </a>
+        <span class="tooltip">Validación</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-cart-alt' ></i>
+            <span class="links_name">Pedidos</span>
+        </a>
+        <span class="tooltip">Pedidos</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-bookmark-alt'></i>
+            <span class="links_name">Facturación</span>
+        </a>
+        <span class="tooltip">Facturación</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Configuración</span>
+        </a>
+        <span class="tooltip">Configuración</span>
+        </li>
+        <li class="profile">
+            <div class="profile-details">
+            <img src="./Assets/hotelmalocalogowhite.png" alt="profileImg">
+            <div class="name_job">
+                <div class="name">Cerrar sesión</div>
+                <div class="job">Hotel Maloca</div>
+            </div>
+            </div>
+            <i class='bx bx-log-out' id="log_out" ></i>
+        </li>
+        </ul>
+    </div>
+
+        <div class="rooms">
+            <img src="./Assets/HotelMalocawhite.png" alt="">
+            <h2>Habitaciones</h2>
+            <div class="camas">
+                <button class="custom-btn btn" data-room="1">Habitación 1</button>
+                <button class="custom-btn btn" data-room="2">Habitación 2</button>
+                <button class="custom-btn btn" data-room="3">Habitación 3</button>
+                <button class="custom-btn btn" data-room="4">Habitación 4</button>
+                <button class="custom-btn btn" data-room="5">Habitación 5</button>
+                <button class="custom-btn btn" data-room="6">Habitación 6</button>
+                <button class="custom-btn btn" data-room="7">Habitación 7</button>
+                <button class="custom-btn btn" data-room="8">Habitación 8</button>
+                <button class="custom-btn btn" data-room="9">Habitación 9</button>
+                <button class="custom-btn btn" data-room="10">Habitación 10</button>
+                <button class="custom-btn btn" data-room="11">Habitación 11</button>
+                <button class="custom-btn btn" data-room="12">Habitación 12</button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal-container" id="modal">
+            <div class="modal">
+                <div class="modal__details">
+                    <h1 class="modal__title">Habitacion 1</h1>
+                    <h2 class="modal__subtitle">Huésped: Mark Serna</h2>
+                    <p class="modal__subtitle">ID: 3546846878</p>
+                </div>
+                <div class="modal__details">
+                    <h2 class="modal__subtitle pedidos">Pedidos</h2>
+                <div class="modal__details">
+                <table class="table-products">
+                    <tr>
+                        <th><p class="modal__id">Producto</p></th>
+                        <th><p class="modal__id">Cantidad</p></th>
+                        <th><p class="modal__id">Valor</p></th>
+                    </tr>
+                    <tr>
+                        <td class="modal__products">Cocacola</td>
+                        <td class="modal__products">1</td>
+                        <td class="modal__products">$ 3500</td>
+                    </tr>
+                    <tr>
+                        <td class="modal__products">Papas Margarita</td>
+                        <td class="modal__products">1</td>
+                        <td class="modal__products">$ 10000</td>
+                    </tr>
+                    <tr>
+                        <td class="modal__products">Salchicha Zenú lata</td>
+                        <td class="modal__products">1</td>
+                        <td class="modal__products">$ 5000</td>
+                    </tr>
+                    <tr>
+                        <td class="modal__products">Menu ejecutivo</td>
+                        <td class="modal__products">2</td>
+                        <td class="modal__products">$ 34000</td>
+                    </tr>
+                </table>
+                </div>
+                <table>
+                    <tr>
+                        <th><p class="modal__id">Total:</p></th>
+                        <th><p class="modal__id">$ 52500</p></th>
+                    </tr>
+                </table>
+            </div>
+                <button class="modal__btn">Agregar producto</button>
+                <button class="close__btn">Cerrar </button>
+            </div>
+        </div>
+
+
+    <section class="formulario" id="validacion">
+        <div class="formulario_container">
+            <header>Validación de reservas</header>
+            <form action="#" class="form" method="POST">
+                <div class="input-box">
+                    <label>ID de validación</label>
+                    <input type="number" name="cedula" placeholder="Digite el ID" required />
+                </div>
+                <div class="input-box">
+                    <label>Fecha de Validación</label>
+                    <input type="date" placeholder="seleccione..." required />
+                </div>
+                <div class="input-box">
+                    <label>Resultado de la validación</label>
+                    <select name="resultadoValidacion">
+                        <option value="correcto">Correcto</option>
+                        <option value="fallo">Fallo</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label>ID reserva</label>
+                    <input type="number" name="cedula" placeholder="Digite la reserva" required />
+                </div>
+                <div class="button">
+                    <input type="submit" value="Nueva validación">
+                    <input type="submit" value="Cerrar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="formulario" id="pedidos">
+        <div class="formulario_container">
+            <header>PEDIDOS</header>
+            <form action="#" class="form" method="POST">
+                <div class="input-box">
+                    <label>Id usuario</label>
+                    <input type="text" name="idUsuario" required>
+                </div>
+                <div class="input-box">
+                    <label>Nombre completo</label>
+                    <input type="text" name="nombreCompleto" required>
+                </div>
+                <div class="input-box">
+                    <label>Producto</label>
+                    <input type="text" name="producto" id="productoInput" autocomplete="off" required>
+                    <div class="autocomplete-list" id="autocompleteList"></div>
+                </div>
+                <div class="input-box">
+                    <label>Cantidad</label>
+                    <input type="number" name="cantidad" required>
+                </div>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Valor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTableBody">
+                        <!-- La tabla se rellenará dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+                <div class="total-box">
+                    <label>Total</label>
+                    <span id="totalValue">$0.00</span>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Aceptar">
+                    <input type="button" value="Cancelar" onclick="clearForm()">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="formulario" id="factura">
+        <div class="invoice-box">
+            <table cellpadding="0" cellspacing="0">
+                <tr class="top">
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:300px;">
+                                </td>
+                                
+                                <td>
+                                    Factura #: 123<br>
+                                    Created: Enero 1, 2023<br>
+                                    Fecha: 2023-08-25
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr class="information">
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td>
+                                    Hotel Calima.<br>
+                                    12345 Sunny Road<br>
+                                    Sunnyville, CA 12345
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    Armenia(Rda.).<br>
+                                    John Doe<br>
+                                    john@example.com
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr class="heading">
+                    <td>
+                        Forma de pago
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        Número
+                    </td>
+                </tr>
+                
+                <tr class="details">
+                    <td>
+                        Tarjeta Crédito
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        1000
+                    </td>
+                </tr>
+                
+                <tr class="heading">
+                    <td>
+                        Producto
+                    </td>
+                    <td>
+                        Cantidad
+                    </td>
+                    <td>
+                        Precio
+                    </td>
+                </tr>
+                
+                <tr class="item">
+                    <td>
+                        Website design
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        $300.00
+                    </td>
+                </tr>
+                
+                <tr class="item">
+                    <td>
+                        Hosting (3 months)
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        $75.00
+                    </td>
+                </tr>
+                
+                <tr class="item last">
+                    <td>
+                        Domain name (1 year)
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        $10.00
+                    </td>
+                </tr>
+                
+                <tr class="total">
+                    <td></td>
+                    <td>Total:</td>
+                    <td>
+                        $385.00
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+        <meta charset="UTF-8">
+        <title>Reservas - Hotel Maloca</title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="./Assets/hotelmalocalogowhite.png">
+            <div class="logo_name">Hotel Maloca</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Buscar...">
+            <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+            <a href="main.html" id="inicio-link">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Inicio</span>
+            </a>
+            <span class="tooltip">Inicio</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Huéspedes</span>
+            </a>
+            <div class="submenu">
+                <a href="./Huesped.html">Registrar Huésped</a>
+                <a href="./consultahuesped.php">Consultar Huésped</a>
+            </div>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-notepad' ></i>
+            <span class="links_name">Reservas</span>
+        </a>
+        <div class="submenu">
+            <a href="./reservas.html">Realizar reserva</a>
+            <a href="./consultareservas.html">Consultar reserva</a>
+        </div>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-check-square'></i>
+            <span class="links_name">Validación</span>
+        </a>
+        <span class="tooltip">Validación</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-cart-alt' ></i>
+            <span class="links_name">Pedidos</span>
+        </a>
+        <span class="tooltip">Pedidos</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-bookmark-alt'></i>
+            <span class="links_name">Facturación</span>
+        </a>
+        <span class="tooltip">Facturación</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Configuración</span>
+        </a>
+        <span class="tooltip">Configuración</span>
+        </li>
+        <li class="profile">
+            <div class="profile-details">
+            <img src="./Assets/hotelmalocalogowhite.png" alt="profileImg">
+            <div class="name_job">
+                <div class="name">Cerrar sesión</div>
+                <div class="job">Hotel Maloca</div>
+            </div>
+            </div>
+            <i class='bx bx-log-out' id="log_out" ></i>
+        </li>
+        </ul>
+    </div>
+<!-- FORMULARIO DE RESERVAS-->
+<section class="formulario" id="formReservas">
+    <div class="formulario_container" id="formPopup">
+        <img src="./Assets/HotelMaloca.png" alt="">
+        <header>Reservas</header>
+        <form action="#" class="form" method="POST">
+            <div class="input-box">
+                <label>Cédula</label>
+                <input type="number" id="cedulaInput" name="cedula" placeholder="Digite la cédula" required/>
+                <div id="respuesta_cedula"> </div>
+            </div>
+            <div class="input-box">
+                <label>Id de reserva</label>
+                <input type="number" name="reserva" placeholder="Digite el numero de reserva" required/>
+            </div>
+            <div class="input-box">
+                <label>Fecha de ingreso</label>
+                <input type="date" name="fechaEntrada" required/>
+            </div>
+            <div class="input-box">
+                <label>Fecha de salida</label>
+                <input type="date" name="fechaSalida" required/>
+            </div>
+            <div class="input-box">
+                <label>Número de huéspedes</label>
+                <input type="number" name="telefono" placeholder="Digite el teléfono" required/>
+            </div>
+            <div class="input-box">
+                <label>Id huéspedes</label>
+                <input type="email" name="numerohuespedes" placeholder="Digite el número de huéspedes" required/>
+            </div>
+            <div class="button">
+                <input type="submit" value="Nueva reserva">
+                <input type="submit" value="Regresar al inicio">
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+    <script src="./JS/script.js"></script>
+    <script>
+        //========== VALIDACIÓN DE DATOS SI EXISTEN ==========//
+
+    </script>
+</body>
+</html>

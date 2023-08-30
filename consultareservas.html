@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+        <meta charset="UTF-8">
+        <title>Consultar reserva - Hotel Maloca</title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="./Assets/hotelmalocalogowhite.png">
+            <div class="logo_name">Hotel Maloca</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Buscar...">
+            <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+            <a href="main.html" id="inicio-link">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Inicio</span>
+            </a>
+            <span class="tooltip">Inicio</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Huéspedes</span>
+            </a>
+            <div class="submenu">
+                <a href="./Huesped.html">Registrar Huésped</a>
+                <a href="./consultahuesped.php">Consultar Huésped</a>
+            </div>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-notepad' ></i>
+            <span class="links_name">Reservas</span>
+        </a>
+        <div class="submenu">
+            <a href="./reservas.html">Realizar reserva</a>
+            <a href="#">Consultar reserva</a>
+        </div>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-check-square'></i>
+            <span class="links_name">Validación</span>
+        </a>
+        <span class="tooltip">Validación</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-cart-alt' ></i>
+            <span class="links_name">Pedidos</span>
+        </a>
+        <span class="tooltip">Pedidos</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-bookmark-alt'></i>
+            <span class="links_name">Facturación</span>
+        </a>
+        <span class="tooltip">Facturación</span>
+        </li>
+        <li>
+        <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Configuración</span>
+        </a>
+        <span class="tooltip">Configuración</span>
+        </li>
+        <li class="profile">
+            <div class="profile-details">
+            <img src="./Assets/hotelmalocalogowhite.png" alt="profileImg">
+            <div class="name_job">
+                <div class="name">Cerrar sesión</div>
+                <div class="job">Hotel Maloca</div>
+            </div>
+            </div>
+            <i class='bx bx-log-out' id="log_out" ></i>
+        </li>
+        </ul>
+    </div>
+<!-- FORMULARIO DE REGISTRO HUESPED-->
+
+    <section class="formulario" id="consultaYDatos">
+        <!-- Consulta de cédula -->
+        <div class="consulta-container">
+            <img src="./Assets/HotelMaloca.png" alt="">
+            <form id="consultaForm">
+                <label>Ingresa la reserva:</label>
+                <input type="number" id="reservaInput" placeholder="Número" required/>
+                <button type="button" id="consultarBtn">Consultar</button>
+            </form>
+        </div>
+        <!-- Datos consultados -->
+        <div class="datos-container">
+            <div>
+                <h2>Datos de la reserva</h2>
+                <p>Cédula: <span id="cedula"></span></p>
+                <p>Nombres: <span id="nombres"></span></p>
+                <p>Fecha ingreso: <span id="apellidos"></span></p>
+                <p>Fecha salida: <span id="salida"></span></p>
+                <p>Teléfono: <span id="telefono"></span></p>
+                <p>Número huéspedes: <span id="correo"></span></p>
+                <p>Habitación: <span id="habitacion"></span></p>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/script.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
